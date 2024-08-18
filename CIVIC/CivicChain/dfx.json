@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CivicChain_backend": {
+      "main": "src/CivicChain_backend/main.mo",
+      "type": "motoko"
+    },
+    "CivicChain_frontend": {
+      "dependencies": [
+        "CivicChain_backend"
+      ],
+      "source": [
+        "src/CivicChain_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CivicChain_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
